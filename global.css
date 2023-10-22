@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+	font-family: "Roboto", sans-serif;
+    background-color: black;
+}
+
+::selection {
+	background: #751cff;
+}
+
+.odometer {
+    font-size: 15vw;
+    font-family: "roboto";
+    font-weight: 500;
+    color: white;
+    text-align: left;
+    margin-top: -2vw;
+}
+
+.text {
+    font-family: "ubuntu";
+    font-weight: 500;
+    font-size: 15vw;
+}
+
+.tsu {
+    font-family: "ubuntu";
+    font-weight: 500;
+    font-size: 4vw;
+    color: white;
+}
+
+.time {
+    font-family: "roboto";
+    font-weight: 500;
+    font-size: 9vw;
+    color: white;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+}

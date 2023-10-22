@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "roboto";
+    font-weight: 500;
+}
+
+.name {
+    font-size: 45px;
+    font-family: "ubuntu";
+    font-weight: 100;
+    margin-left: 260px;
+    margin-top: -250px;
+}
+
+.odometer {
+    font-size: 160px;
+    margin-left: 260px;
+    margin-top: -37px;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+}
