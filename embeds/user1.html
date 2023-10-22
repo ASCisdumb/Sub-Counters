@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ASCounts embed's</title>
+        <link rel="stylesheet" href="../odometer.css">
+        <link rel="stylesheet" href="../embed.css">
+        <script src="../odometer.js"></script>
+    </head>
+        <body>
+            <div>
+                <img src="File.png" alt="" class="avatar" id="avatar" width="150"/>
+                   <h1 id="name" class="name" onclick="search()">Loading</h1>
+                   <span id="count" class="odometer">0</span>
+            </div>   
+            <script>
+           fetch(`https://mixerno.space/api/youtube-channel-counter/user/UCbCmjCuTUZos6Inko4u57UQ`)
+  .then((res) => res.json())
+  .then((data) => {
+    document.getElementById("name").textContent = data.user[0].count;
+    document.getElementById("avatar").src = data.user[1].count;
+  });
+
+
+
+                function updateCounts() {
+        fetch("https://livecounts.xyz/api/youtube-live-subscriber-count/live/UCbCmjCuTUZos6Inko4u57UQ").then((res) => res.json()).then((data) => {
+            document.getElementById("count").textContent = data.counts[0];
+        })
+    }
+    
+    updateCounts()
+    setInterval(updateCounts, 2000)
+            </script>
+        </body>
+    </html>
